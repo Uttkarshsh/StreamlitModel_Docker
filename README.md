@@ -39,6 +39,7 @@ Before getting started, ensure you have the following:
 chmod 600 Uttkarsh.pem
 ssh -i Uttkarsh.pem ec2-user@<EC2-Public-IP>
 ```
+![Connect to EC2 via SSH](6.png)
 
 ---
 ### 4️⃣ **Update System and Install Docker**
