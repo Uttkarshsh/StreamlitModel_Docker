@@ -26,14 +26,12 @@ Before getting started, ensure you have the following:
 - Choose an instance type (e.g., `t2.micro` for free-tier eligibility).
 - Create a **key pair** (e.g., `Uttkarsh.pem`) for secure SSH access.
 
-![EC2 Setup](image1.jpeg)
+![EC2 Setup](1.png)
 
 ---
 ### 2️⃣ **Configure Security Groups**
 - Edit the **inbound rules** to allow traffic on port **8501**.
 - Set the source to `0.0.0.0/0` (public access for testing purposes).
-
-![Security Group](image2.jpeg)
 
 ---
 ### 3️⃣ **Connect to EC2 via SSH**
@@ -51,7 +49,7 @@ sudo service docker start
 sudo docker --version
 ```
 
-![Docker Installation](image3.jpeg)
+![Docker Installation](2.png)
 
 ---
 ### Documentation
@@ -95,7 +93,7 @@ On your local machine, run:
 scp -i Uttkarsh.pem Dockerfile app.py requirements.txt mushrooms.csv ec2-user@<EC2-Public-IP>:/home/ec2-user/downloads
 ```
 
-![File Transfer](image4.jpeg)
+![File Transfer](3.png)
 
 ---
 ### 8️⃣ **Build and Run Docker Container**
@@ -110,7 +108,7 @@ Once the container is running, find the **container ID**:
 sudo docker ps
 ```
 
-![Container Running](image5.jpeg)
+![Container Running](4.png)
 
 ---
 ### 9️⃣ **Access the Application**
@@ -121,7 +119,7 @@ http://<EC2-Public-IP>:8501
 
 You should see the ML model’s web interface.
 
-![ML App](image6.jpeg)
+![ML App](5.png)
 
 ---
 ## 🎉 Congratulations!
