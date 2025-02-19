@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vibhudoc:
+    image: vibhudoc
+    build:
+      context: .
+      dockerfile: ./Dockerfile
